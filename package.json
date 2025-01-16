@@ -1,7 +1,7 @@
 {
-  "name": "yes4shell",
+  "name": "vue-standalone",
   "version": "1.0.0",
-  "description": "yes4shell is an application to route to diffenrent apps on a mono-build system",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
