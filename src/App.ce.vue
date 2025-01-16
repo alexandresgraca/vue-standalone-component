@@ -14,7 +14,6 @@ import Goodbye from './Goodbye.vue';
 import HelloVue from './HelloVue.vue';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { watch } from 'vue';
 
 const props = defineProps(['fbconfig'])
 
