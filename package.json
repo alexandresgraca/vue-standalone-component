@@ -4,22 +4,20 @@
   "description": "yes4shell is an application to route to diffenrent apps on a mono-build system",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve --open --config webpack.dev.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "YES-MKT",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^7.1.2",
-    "style-loader": "^4.0.0",
-    "vue-loader": "^17.4.2",
-    "vue-template-compiler": "^2.7.16",
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "@vitejs/plugin-vue": "^5.1.3",
+    "vite": "^5.4.6"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.5",
     "firebase": "^11.1.0",
+    "primevue": "^4.2.5",
     "vue": "^3.5.13"
   }
 }
