@@ -4,8 +4,8 @@
         <div v-if="fbInitialized">
             <HelloVue myprop="My received prop in vue " />
             <Goodbye @increased="console.log('increased')"></Goodbye>
-            <DatePicker />
         </div>
+        <DatePicker />
     </div>
 </template>
 
@@ -32,4 +32,5 @@ if (props.fbconfig) {
 }
 </script>
 
-<style scoped></style>
+<style>
+</style>

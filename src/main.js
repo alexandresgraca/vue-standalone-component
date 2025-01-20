@@ -8,7 +8,11 @@ const VueAppCE = defineCustomElement(App, {
   styles: App.styles,
   shadowRoot: true,
   configureApp: (app) => {
-    app.use(PrimeVue);
+    app.use(PrimeVue, {
+      theme: {
+        preset: Aura
+      }
+    });
     app.component("DatePicker", DatePicker);
   },
 });
