@@ -1,5 +1,6 @@
 <template>
     <div id="vue-app">
+        <h1>My Vue Web Component</h1>
         <div v-if="fbInitialized">
             <HelloVue myprop="My received prop in vue " />
             <Goodbye @increased="console.log('increased')"></Goodbye>
