@@ -5,8 +5,8 @@ import Aura from "@primevue/themes/aura";
 import DatePicker from "primevue/datepicker";
 
 const VueAppCE = defineCustomElement(App, {
-  styles: [],
-  shadowRoot: false,
+  styles: App.styles,
+  shadowRoot: true,
   configureApp: (app) => {
     app.use(PrimeVue);
     app.component("DatePicker", DatePicker);

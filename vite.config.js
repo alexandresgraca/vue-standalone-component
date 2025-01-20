@@ -15,7 +15,18 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue()],
+  plugins: [vue({ 
+    template: {
+      compilerOptions : {
+          isCustomElement: (tag) => tag.includes('-')
+      }
+    },
+    features: { customElement: true } })],
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
