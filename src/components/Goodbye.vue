@@ -7,18 +7,18 @@
 </template>
 
 <script setup>
-import ChildCounter from "./components/ChildCounter.vue"
-import { ref } from 'vue'
+import ChildCounter from "./ChildCounter.vue"
+import { ref } from 'vue';
 
-const message = ref('Goodbye, World!')
-const count = ref(0)
+const message = ref('Goodbye, World!');
+const count = ref(0);
 
 const emit = defineEmits(["increased"])
 
 const increment = () => {
-  count.value++
+  count.value++;
   emit('increased', count.value)
-}
+};
 </script>
 
 <style scoped>
@@ -55,3 +55,4 @@ p {
   color: #666;
 }
 </style>
+

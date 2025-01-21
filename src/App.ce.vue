@@ -1,21 +1,20 @@
 <template>
     <div id="vue-app">
-        <h1>My Vue Web Component</h1>
+        <h1>My Vue App Web Component</h1>
         <div v-if="fbInitialized">
             <HelloVue myprop="My received prop in vue " />
             <Goodbye @increased="console.log('increased')"></Goodbye>
         </div>
-        <DatePicker />
     </div>
 </template>
 
 <script setup>
-import { ref, provide } from 'vue';
-import Goodbye from './Goodbye.vue';
-import HelloVue from './HelloVue.vue';
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from 'firebase/auth';
+import { ref, provide } from 'vue'
+import Goodbye from './components/Goodbye.vue'
+import HelloVue from './components/HelloVue.vue'
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
+import { getAuth } from 'firebase/auth'
 
 const props = defineProps(['fbconfig'])
 
@@ -32,5 +31,4 @@ if (props.fbconfig) {
 }
 </script>
 
-<style>
-</style>
+<style></style>

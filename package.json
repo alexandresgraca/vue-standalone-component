@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:vueapp": "vite build --config vue-app-component.config.js",
+    "build:primeapp": "vite build --config prime-app-component.config.js",
     "preview": "vite preview"
   },
   "author": "YES-MKT",

@@ -5,15 +5,16 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    emptyOutDir: false,
     rollupOptions: {
       input: {
-        VueComponents: "src/main.js",
+        PrimeAppComponent: "src/prime-app-component.js",
       },
       output: {
         inlineDynamicImports: true,
         format: "es",
         manualChunks: false,
-        entryFileNames: "vue-components.js",
+        entryFileNames: "[name].js",
         assetFileNames: "assets/[name].[ext]",
       },
     },
@@ -32,9 +33,5 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-  },
-  server: {
-    port: 3100,
-    open: true,
   },
 });
